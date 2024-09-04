@@ -13,10 +13,10 @@ services:
     ports:
       - 9443:9443
     volumes:
-      - portainer_data:/data
+      - data:/data
     restart: always
     depends_on:
       - agent
 
 volumes:
-  portainer_data:
+  data:
